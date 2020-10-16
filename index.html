@@ -7,16 +7,22 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
 </head>
 <body>
-
-<div id="vis"></div>
+  
+<div id="symbol_map"></div>
 
 <script type="text/javascript">
-  var spec = "https://upat0003.github.io/FIT3179_HW9/json/visualization.vl222.json";
-  vegaEmbed('#vis', spec).then(function(result) {
+
+  var spec = "json/visualization.vl222.json";
+  vegaEmbed('#symbol_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
+
 </body>
 </html>
+
+
+
