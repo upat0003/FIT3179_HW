@@ -7,14 +7,14 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW9/main/json/custom.topojson",
+        "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW/main/json/custom.topojson",
         "format": {"type": "topojson", "feature": "custom"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW9/main/data/earthquake.csv"
+        "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW/main/data/earthquake.csv"
       },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
