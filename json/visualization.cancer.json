@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Prevalence of Cancer attributable to infections (%), by country",
+  "title": "Prevalence of Cancer attributable to infections (%), by country [2017]",
   "width": 800,
   "height": 600,
   "projection": {"type": "equirectangular"},
