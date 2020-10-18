@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Prevalence of Cancer attributable to infections (%), by country",
+  "width": 800,
+  "height": 600,
+  "projection": {"type": "equirectangular"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW/main/json/custom.topojson",
+    "format": {"type": "topojson", "feature": "custom"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.name_sort",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW/main/data/Cancer.Atlas.csv"
+        },
+        "key": "Country or Territory",
+        "fields": ["Cancers attributable to infections"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "Cancers attributable to infections",
+      "type": "quantitative",
+      "scale": {"type": "linear"}
+    },
+    "tooltip": [
+      {"field": "properties.name_sort", "type": "nominal", "title": "Country"},
+      {
+        "field": "Cancers attributable to infections",
+        "type": "quantitative",
+        "title": "Cancers infections"
+      }
+    ]
+  },
+  "config": {}
+}
