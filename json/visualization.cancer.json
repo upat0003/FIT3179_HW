@@ -10,7 +10,7 @@
   },
   "transform": [
     {
-      "lookup": "properties.name",
+      "lookup": "properties.name_sort",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/upat0003/FIT3179_HW/main/data/Cancer.Atlas.csv"
@@ -28,7 +28,7 @@
       "scale": {"type": "linear"}
     },
     "tooltip": [
-      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {"field": "properties.name_sort", "type": "nominal", "title": "Country"},
       {
         "field": "Cancers attributable to infections",
         "type": "quantitative",
