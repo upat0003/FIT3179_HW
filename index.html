@@ -16,7 +16,7 @@
 <h1>An Example of Multiple Visualisations</h1>
 
 <h2>This is the first visualisation</h2>
-<div id="symbol_map"></div>
+<div id="choropleth_map"></div>
 
 <h2>This is the second visualisation</h2>
 <div id="bubble_plot"></div>
@@ -25,7 +25,7 @@
   
   var vis1 = "https://upat0003.github.io/FIT3179_HW/json/visualization.map.json";
   
-  vegaEmbed('#symbol_map', vis1).then(function(result) {
+  vegaEmbed('#choropleth_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
